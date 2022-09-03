@@ -1762,7 +1762,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
   margin:0;
   padding:0;
   min-height: 100vh;
-  background: var(--background-color-3);
+  background: var(--background-color-1);
   justify-content: center;
   align-items: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -1809,14 +1809,14 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
   transform: translateY(0);
   box-shadow:
-    inset 0 0 60px #FDEEDC,
-    inset 20px 0 80px #FFD8A9,
-    inset -20px 0 80px #FDEEDC,
-    inset 20px 0 300px white,
-    inset -20px 0 300px #FDEEDC,
-    0 0 50px #FFD8A9,
-    -10px 0 80px #FFD8A9,
-    10px 0 80px #FDEEDC;
+    inset 0 0 60px var(--background-color-3),
+    inset 20px 0 80px var(--background-color-1),
+    inset -20px 0 80px var(--background-color-3),
+    inset 20px 0 300px var(--background-color-1),
+    inset -20px 0 300px var(--background-color-3),
+    0 0 50px var(--background-color-3),
+    -10px 0 80px var(--background-color-1),
+    10px 0 80px var(--background-color-3);
    
 }
 
@@ -1854,7 +1854,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 .eventscontainer .eventscard .face.face2{
    position: relative;
-   background: var(--background-color-1);
+   background: var(--background-color-3);
    display: flex;
    align-items: center;
    justify-content: center;
