@@ -25,14 +25,14 @@ a:hover {
 [data-theme="light"] {
 
     --padding-container: 100px;
-    --color-title: #ffd152;
+    --color-title: #725400;
     --color-paragraph: rgb(0, 0, 0);
     --primary: #9d7814;
     --background: rgb(0, 0, 0);
-    --background-image: linear-gradient(180deg, #0000004b 20%, #00000042 100%), url('./images/portada.jpg');
-    --background-color-1: #ffffff;
-    --background-color-2: #FAF3E3;
-    --background-color-3: #e2efff;
+    --background-image: linear-gradient(180deg, #ffffffb6 20%, #ffffff94 100%), url('./images/light.png');
+    --background-color-1: white;
+    --background-color-2: #FDEEDC;
+    --background-color-3: #FFD8A9;
     --background-color-4: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
     --box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.274);
     --border: 1px solid black;
@@ -43,7 +43,7 @@ a:hover {
 [data-theme="dark"] {
 
     --padding-container: 100px;
-    --color-title: #d4bf85;
+    --color-title: #ffcd60;
     --color-paragraph: rgb(255, 255, 255);
     --primary: #c89b22;
     --background: rgb(255, 255, 255);
@@ -312,7 +312,7 @@ input:checked + .switcher:before {
 	font-size: 20px;
 	line-height: 20px;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	color: var(--color-title);
 	transition : all 0.3s ease-out;
 }
@@ -368,20 +368,20 @@ input:checked + .switcher:before {
 	width: 30px;
 }
 .nav {
-	position: fixed;
+	position: fixed ;
 	z-index: 98;
 }
 .nav:before, .nav:after {
 	content: "";
 	position: fixed;
-  	top: 75px;
-  	left: 40px;
+  	top: 70px;
+  	left: 30px;
 	width: 0;
 	height: 0;
 	background-color: var(--background-color-1);
-	border-bottom-right-radius: 200%;
+	border-bottom-right-radius: 120%;
 	z-index: -1;
-	transition: border-radius linear 0.8s, width cubic-bezier(0.77, 0, 0.175, 1) 0.6s, height cubic-bezier(0.77, 0, 0.175, 1) 0.6s;
+	transition: border-radius linear 1s, width cubic-bezier(0.77, 0, 0.175, 1) 0.6s, height cubic-bezier(0.77, 0, 0.175, 1) 0.6s;
 }
 .nav:after {
 
@@ -394,14 +394,14 @@ input:checked + .switcher:before {
   box-shadow: var(--box-shadow);
 }
 .nav:before {
-	-webkit-transition-delay: .2s;
-          transition-delay: .2s;
+	-webkit-transition-delay: .1s;
+          transition-delay: .1s;
 }
 .nav__content {
 	position: fixed;
 	visibility: hidden;
 	top: 80px;
-  	left: 50px;
+  	left: 40px;
 	text-align: left;
 }
 .nav__list {
@@ -417,11 +417,11 @@ input:checked + .switcher:before {
           transition-delay: 0.8s;
 	opacity: 0;
 	text-align: left;
-	color: #fff;
+	color: var(--color-paragraph);
 	overflow: hidden; 
-	font-family: 'Poppins', sans-serif;
-	font-size: 15px;
-	line-height: 1.9;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 25px;
+	line-height: 1.3em;
 	letter-spacing: 1px;
 	-webkit-transform: translate(30px, 0%);
           transform: translate(30px, 0%);
@@ -434,12 +434,14 @@ input:checked + .switcher:before {
 }
 
 .nav__list-item a{ 
+  font-style: italic  ;
+  font-size: 0.7em;
 	position: relative;
 	text-decoration: none;
 	color: var(--color-paragraph);
 	overflow: hidden; 
 	cursor: pointer;
-	font-family: 'Poppins', sans-serif;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: 600;
 	z-index: 2;
   padding-left: 40px;
@@ -585,7 +587,6 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 .switch-wrap {
 	font-weight: 900;
-	font-size: 46px;
 	line-height: 1;
 	color: var(--color-paragraph);
 	text-align: center;
@@ -800,8 +801,6 @@ color: var(--color-title);
   }
 
 .hero-section{
-	align-items: flex-start;
-	background-image: var(--background-color-1);
 	display: flex;
 	min-height: 100%;
 	justify-content: center;
@@ -1303,20 +1302,30 @@ a {
   color: rgba(255, 255, 255, 0.9);
 }
   .sect-banner .v-center {
-    position: relative;
     z-index: 2; }
   .sect-banner .v-center {
     display: table-cell;
     vertical-align: middle;
-    position: relative;
-    background-attachment: fixed;
     background-image: var(--background-image);
     background-position: center;
-    padding: 0 5%; }
+    background-size: 100%;
+  }
+
+  @media (max-width: 991px) {
+    .sect-banner .v-center {
+    display: table-cell;
+    vertical-align: middle;
+    background-image: var(--background-image);
+    background-position: center;
+    background-size: 450%;
+  }
+    
+  }
+  
     .sect-banner .v-center h1 {
-      -webkit-animation: fade-in ease-in-out 4s 1s both;
-      -moz-animation: fade-in ease-in-out 4s 1s both;
-      animation: fade-in ease-in-out 4s 1s both; }
+      -webkit-animation: fade-in ease-in-out 1s 1s both;
+      -moz-animation: fade-in ease-in-out 1s 1s both;
+      animation: fade-in ease-in-out 1s 1s both; }
     .sect-banner .v-center p {
       font-size: 120%;
       -webkit-animation: fade-in ease-in-out 4s 1s both;
@@ -1797,8 +1806,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .eventscontainer .eventscard:hover .face.face1{
   transform: translateY(0);
   box-shadow:
-    inset 0 0 60px rgb(255, 255, 255),
-    inset 20px 0 80px #ffe9ad,
+    inset 0 0 60px rgb(255, 244, 90),
+    inset 20px 0 80px #ffe8ad,
     inset -20px 0 80px #ffffff,
     inset 20px 0 300px #ffefca,
     inset -20px 0 300px #ffffff,
@@ -1861,7 +1870,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
   font-size: 10pt;
   margin: 0 ;
   padding: 0;
-  color:var(--color-paragraph);
+  color:white;
 }
 
 .eventscontainer .card .face.face2 .eventscontent a{
