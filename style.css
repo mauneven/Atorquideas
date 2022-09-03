@@ -1309,7 +1309,9 @@ a {
     display: table-cell;
     vertical-align: middle;
     position: relative;
+    background-attachment: fixed;
     background-image: var(--background-image);
+    background-position: center;
     padding: 0 5%; }
     .sect-banner .v-center h1 {
       -webkit-animation: fade-in ease-in-out 4s 1s both;
