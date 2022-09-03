@@ -673,7 +673,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 	justify-content: center;
   color: var(--color-title);
   font-style: italic;
-  padding: 0.2em;
+  padding: 0.5em;
 
 }
 
@@ -715,9 +715,21 @@ body.nav-active .nav__list-item:nth-child(10) {
   align-items: center;
   text-align: center;
   display: grid;
-  padding: 0.5em;
+  padding: 0em;
   margin: 0;
 
+}
+
+@media (max-width: 1000px) {
+
+  .title1{
+
+    font-size: 2rem;
+    text-align: left;
+    padding: 0;
+  
+  }
+  
 }
 
 .title2{
@@ -728,6 +740,22 @@ body.nav-active .nav__list-item:nth-child(10) {
 	justify-content: center;
 	text-align: center;
   padding: 1em;
+
+}
+
+.title3{
+
+	font-size: 3rem;
+	color: var(--color-title);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	justify-content: center;
+	text-align: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  padding: 0.5em;
+  margin: 0;
 
 }
 
