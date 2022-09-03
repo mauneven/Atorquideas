@@ -1806,16 +1806,17 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 
 .eventscontainer .eventscard:hover .face.face1{
+
   transform: translateY(0);
   box-shadow:
-    inset 0 0 60px rgb(255, 244, 90),
-    inset 20px 0 80px #ffe8ad,
-    inset -20px 0 80px #ffffff,
-    inset 20px 0 300px #ffefca,
-    inset -20px 0 300px #ffffff,
-    0 0 50px rgb(255, 255, 255),
-    -10px 0 80px #ffb914,
-    10px 0 80px #c89b22;
+    inset 0 0 60px #FDEEDC,
+    inset 20px 0 80px #FFD8A9,
+    inset -20px 0 80px #FDEEDC,
+    inset 20px 0 300px white,
+    inset -20px 0 300px #FDEEDC,
+    0 0 50px #FFD8A9,
+    -10px 0 80px #FFD8A9,
+    10px 0 80px #FDEEDC;
    
 }
 
