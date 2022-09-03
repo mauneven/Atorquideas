@@ -681,7 +681,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 
   .megatitle{
 
-    font-size: 5rem;
+    font-size: 4rem;
   
   }
   
@@ -715,6 +715,8 @@ body.nav-active .nav__list-item:nth-child(10) {
   align-items: center;
   text-align: center;
   display: grid;
+  padding: 0.5em;
+  margin: 0;
 
 }
 
@@ -731,7 +733,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 .page__texts{
 
-	font-size: 18px;
+	font-size: 25px;
 	color: var(--color-paragraph);
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	text-align: justify;
