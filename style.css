@@ -34,7 +34,7 @@ a:hover {
     --background-color-2: #FDEEDC;
     --background-color-3: #FFD8A9;
     --background-color-4: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
-    --box-shadow: 0px 0px 40px rgba(255, 210, 63, 0.317);
+    --box-shadow: 0px 0px 40px #ffcd604e;
     --border: 1px solid black;
     --filter: invert(0);
 
@@ -52,7 +52,7 @@ a:hover {
     --background-color-2: #103c2c;
     --background-color-3: #173f3a;
     --background-color-4: linear-gradient(90deg, rgba(0, 0, 0, 0.645) 0%, rgb(0, 0, 0) 100%);
-    --box-shadow: 0px 0px 40px rgba(255, 210, 63, 0.317);
+    --box-shadow: 0px 0px 40px #ffcd604e;
     --border: 1px solid rgb(255, 255, 255);
     --filter: invert(0);
 
@@ -370,7 +370,6 @@ input:checked + .switcher:before {
 .nav {
 	position: fixed ;
 	z-index: 98;
-  border: var(--border);
 }
 .nav:before, .nav:after {
 	content: "";
@@ -1429,7 +1428,7 @@ body {
 	flex: 1 0 24rem;
 	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
 	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	box-shadow: var(--box-shadow);
 	overflow: hidden;
 }
 
@@ -1814,7 +1813,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     inset -20px 0 80px #ffffff,
     inset 20px 0 300px #ffefca,
     inset -20px 0 300px #ffffff,
-    0 0 50px #fff,
+    0 0 50px rgb(255, 255, 255),
     -10px 0 80px #ffb914,
     10px 0 80px #c89b22;
    
