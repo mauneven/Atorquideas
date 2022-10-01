@@ -498,7 +498,7 @@ body.nav-active .nav {
 	visibility: visible;
 }
 body.nav-active .nav:before, body.nav-active .nav:after {
-	width: 320px;
+	width: 300px;
 	height: 500px;
 	border-radius: 15px;
 }
