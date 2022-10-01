@@ -47,7 +47,7 @@ a:hover {
     --color-paragraph: rgb(255, 255, 255);
     --primary: #c89b22;
     --background: rgb(255, 255, 255);
-    --background-image: linear-gradient(180deg, #0000005e 0%, #00000064 100%), url('./images/portada.jpg');
+    --background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.09) 100%), url('./images/portada.jpg');
     --background-color-1: black;
     --background-color-2: #103c2c;
     --background-color-3: #173f3a;
@@ -72,7 +72,6 @@ html{
     display: inline-block;
     width: 60px;
     height: 34px;
-    grid: 20px;
 	margin-left: 40px;
 	
 }
@@ -193,8 +192,6 @@ input:checked + .switcher:before {
     background-color: var(--background-color-3);
     align-items: center;
     text-align: center;
-    padding: auto;
-
 }
 
 .page2{
@@ -291,12 +288,11 @@ input:checked + .switcher:before {
 .header-wrapper{
 	display: flex;
 	position: absolute;
-	
 	width: calc(100% - 600px);
 	width: 100%;
-	justify-content: left;
 	justify-items: center;
-	
+	align-content: center;
+	align-items: center;
 } 
 .logo-wrap {
 	position: absolute;
@@ -326,23 +322,23 @@ input:checked + .switcher:before {
 	position: relative;
 	display: inline-block;
 	padding: 2em;
-	transition : all 0.3s ease-out;
-  justify-content: center;
+	transition : all 0.2s ease-out;
+  	justify-content: center;
 }
 .menu-icon {
-	height: 30px;
-	width: 30px;
+	height: 50px;
+	width: 50px;
 	position: relative;
-	z-index: 2;
+	z-index: 5;
 	cursor: pointer;
 	display: block;
 }
 .menu-icon__line {
-	height: 2px;
-	width: 30px;
+	height: 4px;
+	width: 50px;
 	display: block;
 	background-color: var(--color-title);
-	margin-bottom: 7px;
+	margin-bottom: 15px;
 	cursor: pointer;
 	-webkit-transition: background-color .5s ease, -webkit-transform .2s ease;
 	transition: background-color .5s ease, -webkit-transform .2s ease;
@@ -350,22 +346,17 @@ input:checked + .switcher:before {
 	transition: transform .2s ease, background-color .5s ease, -webkit-transform .2s ease;
 }
 .menu-icon__line-left {
-	width: 16.5px;
-	-webkit-transition: all 200ms linear;
+	width: 50px;
 	transition: all 200ms linear;
 }
 .menu-icon__line-right {
-	width: 16.5px;
+	width: 50px;
 	float: right;
 	-webkit-transition: all 200ms linear;
 	-moz-transition: all 200ms linear;
 	-o-transition: all 200ms linear;
 	-ms-transition: all 200ms linear;
 	transition: all 200ms linear;
-}
-.menu-icon:hover .menu-icon__line-left,
-.menu-icon:hover .menu-icon__line-right {
-	width: 30px;
 }
 .nav {
 	position: fixed ;
@@ -374,8 +365,8 @@ input:checked + .switcher:before {
 .nav:before, .nav:after {
 	content: "";
 	position: fixed;
-  	top: 70px;
-  	left: 30px;
+  	top: 110px;
+  	left: 35px;
 	width: 0;
 	height: 0;
 	background-color: var(--background-color-1);
@@ -400,7 +391,7 @@ input:checked + .switcher:before {
 .nav__content {
 	position: fixed;
 	visibility: hidden;
-	top: 80px;
+	top: 130px;
   	left: 40px;
 	text-align: left;
 }
@@ -489,26 +480,26 @@ body.nav-active .menu-icon__line {
           transform: translate(0px, 0px) rotate(-45deg);
 }
 body.nav-active .menu-icon__line-left {
-	width: 15px;
-	-webkit-transform: translate(2px, 4px) rotate(45deg);
-          transform: translate(2px, 4px) rotate(45deg);
+	width: 25px;
+	-webkit-transform: translate(3px, 9px) rotate(45deg);
+          transform: translate(3px, 9px) rotate(45deg);
 }
 body.nav-active .menu-icon__line-right {
-	width: 15px;
+	width: 25px;
 	float: right;
-	-webkit-transform: translate(-3px, -3.5px) rotate(45deg);
-          transform: translate(-3px, -3.5px) rotate(45deg);
+	-webkit-transform: translate(-3px, -8.5px) rotate(45deg);
+          transform: translate(-3px, -8.5px) rotate(45deg);
 }
 body.nav-active .menu-icon:hover .menu-icon__line-left,
 body.nav-active .menu-icon:hover .menu-icon__line-right {
-	width: 15px;
+	width: 25px;
 }
 body.nav-active .nav {
 	visibility: visible;
 }
 body.nav-active .nav:before, body.nav-active .nav:after {
-	width: 300px;
-	height: 450px;
+	width: 320px;
+	height: 500px;
 	border-radius: 15px;
 }
 body.nav-active .nav:after {
@@ -674,7 +665,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 	justify-content: center;
   color: var(--color-title);
   font-style: italic;
-  padding: 0.5em;
+  padding: 0.8em;
 
 }
 
@@ -707,17 +698,32 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 .title1{
 
-	font-size: 3rem;
+	font-size: 2.5rem;
 	color: var(--color-title);
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	justify-content: center;
 	text-align: center;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  display: grid;
-  padding: 0em;
-  margin: 0;
+  	align-content: center;
+  	align-items: center;
+  	text-align: center;
+  	display: grid;
+  	padding: 0em;
+	margin-bottom: 15px;
+
+}
+
+.title2{
+
+	font-size: 5.5rem;
+	color: var(--color-title);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	justify-content: center;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	display: grid;
+	padding: 0em;
 
 }
 
@@ -725,9 +731,10 @@ body.nav-active .nav__list-item:nth-child(10) {
 
   .title1{
 
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 0;
-  
+  	align-items: center;
+
   }
   
 }
@@ -767,6 +774,12 @@ body.nav-active .nav__list-item:nth-child(10) {
 	text-align: justify;
   padding: 1em;
   align-content: center;
+
+}
+
+.oap{
+
+	font-size: 20px;
 
 }
 
@@ -811,6 +824,18 @@ color: var(--color-title);
   background-size: 80px 80px;
   background-position: 0 0,40px 40px;
   }
+
+.hero-section2{
+	display: flex;
+	min-height: 100%;
+	justify-content: center;
+	padding: 0em;
+	background-color: var(--background-color-1);
+	opacity: 1;
+	background-image:  radial-gradient(var(--color-title) 2px, transparent 2px);
+	background-size: 80px 80px;
+	background-position: 0 0,40px 40px;
+}
   
   .card-grid{
 	display: grid;
@@ -1575,7 +1600,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .vm__title{
 
     font-size: 3.5rem;
-    scrollbar-shadow-color: 1px 2px 1px;
     color: var(--color-paragraph);
     text-shadow: 5px 5px 40px white;
 
@@ -1747,12 +1771,20 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 .icons {
 
-  font-size: 80px;
-  filter: var(--filter);
-  cursor: pointer;
+	margin-bottom: 15px;
+  	font-size: 80px;
+  	filter: var(--filter);
+  	cursor: pointer;
 
 }
+.icons2 {
 
+	margin-bottom: 15px;
+	font-size: 180px;
+	filter: var(--filter);
+	cursor: pointer;
+
+}
 
 
 /**** events cards ****/
