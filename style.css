@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body{
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
 	line-height: 1.7;
@@ -15,18 +14,23 @@ body{
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
   --padding-container: 100px;
-  --color-title: #ffcd60;
+  --color-title: #fefae0;
   --color-paragraph: rgb(255, 255, 255);
   --primary: #c89b22;
-  --background: rgb(255, 255, 255);
+  --background: rgb(0, 0, 0);
   --background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.493) 0%, rgba(0, 0, 0, 0) 100%), url('./images/portada.jpg');
-  --background-color-1: black;
-  --background-color-2: #103c2c;
-  --background-color-3: #0c4b43;
+  --background-color-1: #41521f;
+  --background-color-2: #415d43;
+  --background-color-3: #709775;
   --background-color-4: linear-gradient(90deg, rgba(0, 0, 0, 0.645) 0%, rgb(0, 0, 0) 100%);
-  --box-shadow: 0px 0px 40px #ffcd604e;
+  --box-shadow: 0px 0px 40px #ffffff4e;
   --border: 1px solid rgb(255, 255, 255);
 }
+
+.p{
+  font-size: 15px;
+}
+
 a {
 	cursor: pointer;
 }
@@ -170,7 +174,6 @@ html{
 
 	width: 500px;
   border-radius: 20px;
-  box-shadow: var(--box-shadow);
   border: var(--border);
 
 }
@@ -220,7 +223,6 @@ html{
 }
 .logo-wrap a {
 	cursor: pointer;
-	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: 900;
 	font-size: 20px;
 	line-height: 20px;
@@ -327,7 +329,6 @@ html{
 	text-align: left;
 	color: var(--color-paragraph);
 	overflow: hidden; 
-	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 25px;
 	line-height: 1.3em;
 	letter-spacing: 1px;
@@ -349,7 +350,6 @@ html{
 	color: var(--color-paragraph);
 	overflow: hidden; 
 	cursor: pointer;
-	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: 600;
 	z-index: 2;
   padding-left: 40px;
@@ -579,11 +579,10 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 	font-size: 6rem;
 	color: var(--color-title);
-	font-family: Georgia, 'Times New Roman', Times, serif;
 	justify-content: center;
   color: var(--color-title);
-  font-style: italic;
   padding: 0.8em;
+  font-weight: 800;
 
 }
 
@@ -617,7 +616,6 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 	font-size: 2.5rem;
 	color: var(--color-title);
-	font-family: Georgia, 'Times New Roman', Times, serif;
 	justify-content: center;
 	text-align: center;
   	align-content: center;
@@ -626,6 +624,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   	display: grid;
   	padding: 0em;
 	margin-bottom: 15px;
+  font-weight: 400;
 
 }
 
@@ -633,7 +632,6 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 	font-size: 5.5rem;
 	color: var(--color-title);
-	font-family: Georgia, 'Times New Roman', Times, serif;
 	justify-content: center;
 	text-align: center;
 	align-content: center;
@@ -641,6 +639,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 	text-align: center;
 	display: grid;
 	padding: 0em;
+  font-weight: 400;
 
 }
 
@@ -660,10 +659,10 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 	font-size: 4rem;
 	color: var(--color-title);
-	font-family: Georgia, 'Times New Roman', Times, serif;
 	justify-content: center;
 	text-align: center;
   padding: 1em;
+  font-weight: 600;
 
 }
 
@@ -671,7 +670,6 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 	font-size: 3rem;
 	color: var(--color-title);
-	font-family: Georgia, 'Times New Roman', Times, serif;
 	justify-content: center;
 	text-align: center;
   align-content: center;
@@ -680,14 +678,13 @@ body.nav-active .nav__list-item:nth-child(10) {
   display: grid;
   padding: 0.5em;
   margin: 0;
-
+  font-weight: 600;
 }
 
 .page__texts{
 
 	font-size: 25px;
 	color: var(--color-paragraph);
-	font-family: Georgia, 'Times New Roman', Times, serif;
 	text-align: justify;
   padding: 1em;
   align-content: center;
@@ -778,7 +775,7 @@ color: var(--color-title);
   .card{
 	list-style: none;
 	position: relative;
-  border: 0.2px solid white;
+  border: 2px solid rgb(255, 255, 255);
 }
   
   .card:before{
@@ -1547,7 +1544,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
     --bg-cta: rgb(43, 43, 43);
     --color-cta: rgb(255, 255, 255);
     --color-items: #000000;
-    box-shadow: var(--box-shadow);
     border: var(--border);
 
 }
@@ -1556,7 +1552,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
     color: var(--color-title);
     margin-bottom: 15px;
-    font-weight: 350;
+    font-weight: 550;
     font-size: 3.5em;
 
 }
@@ -1573,7 +1569,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     margin-top: 30px;
     display: grid;
     gap: 1em;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 1.2rem;
     margin-bottom: 50px;
     color: var(--color-items);
@@ -1715,7 +1711,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
   background: var(--background-color-1);
   justify-content: center;
   align-items: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   justify-content: center;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -1758,15 +1753,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .eventscontainer .eventscard:hover .face.face1{
 
   transform: translateY(0);
-  box-shadow:
-    inset 0 0 60px var(--background-color-3),
-    inset 20px 0 80px var(--background-color-1),
-    inset -20px 0 80px var(--background-color-3),
-    inset 20px 0 300px var(--background-color-1),
-    inset -20px 0 300px var(--background-color-3),
-    0 0 50px var(--background-color-3),
-    -10px 0 80px var(--background-color-1),
-    10px 0 80px var(--background-color-3);
    
 }
 
@@ -1810,7 +1796,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
    justify-content: center;
    padding: 20px;
   box-sizing: border-box;
-  box-shadow: var(--box-shadow);
   transform: translateY(-100px);
   border: var(--border);
 }
@@ -1838,5 +1823,4 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .eventscontainer .card .face.face2 .eventscontent a:hover{
   background: var(--background-color-1) ;
   color: var(--color-paragraph); 
-  box-shadow: var(--box-shadow);
 }
