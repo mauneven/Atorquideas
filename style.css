@@ -1824,3 +1824,9 @@ Remove or comment-out the code block below to see how the browser will fall-back
   background: var(--background-color-1) ;
   color: var(--color-paragraph); 
 }
+
+.contactimage{
+
+  width: 100px;
+
+}
