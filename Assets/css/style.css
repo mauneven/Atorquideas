@@ -324,7 +324,7 @@ section h3.section-subheading {
   float: left;
   height: 100%;
   width: 60%;
-  padding: 3rem 3rem 3rem 5rem;
+  padding: 3rem 3rem 3rem 3rem;
   display: table;
 }
 .left > div {
