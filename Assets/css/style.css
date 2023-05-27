@@ -452,6 +452,8 @@ a.current_dot {
 .page__img3{
 
   border-radius: 50%;
+  max-width: 150px;
+  height: auto;
 
 }
 
